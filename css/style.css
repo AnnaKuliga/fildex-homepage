@@ -109,6 +109,13 @@ input {
   border: none;
   outline: none;
 }
+.grid {
+  display: grid;
+  grid-gap: 10px;
+}
+.grid-two-columns {
+  grid-template-columns: 1fr 1fr;
+}
 /*=============== LAYOUT ===============*/
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -160,7 +167,16 @@ input {
   position: relative;
   transition: 0.4s;
 }
-
+.btn-share {
+  position: absolute;
+  bottom: 1.8rem;
+  left: 0;
+  text-align: center;
+}
+.social-links a {
+  font-size: 24px;
+  color: var(--title-color);
+}
 /* Active Link */
 .nav__link.active-link,
 .nav__link:hover {
