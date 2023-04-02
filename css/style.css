@@ -121,7 +121,7 @@ input {
 }
 /*=============== LAYOUT ===============*/
 .home .container {
-  max-width: 1250px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -220,12 +220,15 @@ input {
 }
 /*=============== MAIN ===============*/
 .main {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/774/original/1.png?1680449271);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-left: 50px;
 }
 /*===== Home Section =====*/
 .home {
-  background: #3e3e3e;
   height: 100vh;
+  width: 100%;
 }
 .home__container {
   position: relative;
@@ -311,7 +314,6 @@ input {
 }
 /*===== About Section =====*/
 .about {
-  height: 100vh;
   margin-left: 100px;
 }
 .about p {
@@ -320,8 +322,6 @@ input {
 .about__container {
   grid-template-columns: 1fr 2fr;
   grid-gap: 30px;
-  position: relative;
-  height: 100%;
 }
 
 /*===== Services Section =====*/
@@ -339,8 +339,7 @@ input {
   border-radius: 8px;
   margin-bottom: 10px;
 }
-.service_card:last-child {
-}
+
 .shadow-effect {
   transition: all 0.5s;
 }
@@ -383,23 +382,7 @@ input {
   .nav__logo {
     display: none;
   }
-}
-@media screen and (max-width: 1408px) {
-}
-
-@media screen and (max-width: 1216px) {
-}
-
-@media screen and (max-width: 1024px) {
-}
-
-/* For Medium Devices */
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (max-width: 576px) {
-}
-
-/* For Small Devices */
-@media screen and (max-width: 350px) {
+  .about__container {
+    grid-template-columns: 1fr;
+  }
 }
