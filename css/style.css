@@ -257,6 +257,9 @@ input {
   display: flex;
   align-items: center;
 }
+.info__item a {
+  color: var(--text-color);
+}
 .info__title,
 .info__subtitle {
   font-size: var(--small-font-size);
@@ -317,17 +320,40 @@ input {
   position: relative;
   height: 100%;
 }
-/*===== Qualification Section =====*/
-
-/*===== Skills Section =====*/
-
-/*===== Work Section =====*/
-
-/* Active Item Work */
-
-/* Portfolio Popup */
 
 /*===== Services Section =====*/
+.services {
+  height: 100vh;
+  margin-left: 100px;
+}
+.services__content {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.service_card {
+  padding: 20px 40px;
+  background-color: #3e3e3e;
+  border-radius: 8px;
+}
+.shadow-effect {
+  transition: all 0.5s;
+}
+.shadow-effect:hover {
+  box-shadow: -6px 6px 0 0 var(--skin-color);
+}
+.service_card p {
+  font-size: 12px;
+  text-align: justify;
+}
+.service_card h3 {
+  color: var(--skin-color);
+  font-size: 25px;
+  text-align: center;
+}
+.service_card i {
+  font-size: 40px;
+  text-align: center;
+}
 
 /* Active Modal*/
 
