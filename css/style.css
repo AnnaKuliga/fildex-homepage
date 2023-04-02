@@ -144,7 +144,7 @@ input {
 /*=============== SIDEBAR ===============*/
 .sidebar {
   position: fixed;
-  width: 100px;
+  width: 50px;
   height: 100vh;
   background-color: var(--body-color);
   border-right: 1px solid var(--box-color);
@@ -217,7 +217,7 @@ input {
 }
 /*=============== MAIN ===============*/
 .main {
-  margin-left: 100px;
+  margin-left: 50px;
 }
 /*===== Home Section =====*/
 .home {
