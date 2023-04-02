@@ -7,7 +7,7 @@
   --hue-color: 242;
 
   /* HSL Color Mode */
-  --skin-color: hsl(342, 92%, 46%);
+  --skin-color: #ffe700;
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 85%);
   --body-color: hsl(var(--hue-color), 19%, 5%);
@@ -117,7 +117,14 @@ input {
   grid-template-columns: 1fr 1fr;
 }
 /*=============== LAYOUT ===============*/
-
+.home .container {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid {
+  display: grid;
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 
 /*=============== SIDEBAR ===============*/
@@ -130,19 +137,17 @@ input {
 }
 .nav__logo {
   position: absolute;
-  left: 0;
-
-  top: 1.8rem;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--skin-color);
+  right: 0;
+  top: 0;
   text-align: center;
   margin: auto;
+  width: 400px;
+  height: 400px;
+  background-color: #ffe700;
+  border-bottom-left-radius:50%;
 }
-.nav__logo-text {
-  font-size: 25px;
-  color: var(--title-color);
+.nav__logo img {
+  max-width: 350px;
 }
 .nav__menu {
   position: fixed;
@@ -197,11 +202,95 @@ input {
   margin: auto;
 }
 /*=============== MAIN ===============*/
-
+.main {
+  margin-left: 100px;
+}
 /*===== Home Section =====*/
+.home {
+  background: #3e3e3e;
+  height: 100vh;
+}
+.home__container {
+  position: relative;
+  height: 100%;
+  align-items: center;
+}
+.home__description {
+  max-width: 450px;
+  margin-bottom: var(--mb-2);
+}
+.home__img {
+  display: flex;
+  max-width: 100px;
+  m
+}
+.home__title {
+  font-size: var(--biggest-font-size);
+}
+.home__subtitle {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-75);
+}
 
+.my__info {
+  display: flex;
+  column-gap: 1.8rem;
+  position: absolute;
+  margin-left: 10px;
+  bottom: 1.8rem;
+}
+.info__item {
+  display: flex;
+  align-items: center;
+}
+.info__title,
+.info__subtitle {
+  font-size: var(--small-font-size);
+}
+.info-title {
+  font-weight: var(--font-medium);
+}
+.info__icon {
+  font-size: 1.8rem;
+  color: var(--skin-color);
+  margin-right: var(--mb-0-75);
+}
 /*===== Buttons =====*/
 
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: var(--skin-color);
+  color: var(--title-color);
+  padding: 0.75rem 1.4rem;
+  border-radius: 0.25rem;
+  font-weight: var(--font-medium);
+  position: relative;
+  z-index: 1;
+}
+.button::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #343a40;
+  z-index: -1;
+  transform-origin: center;
+  transform: scale(0);
+  border-radius: 0.25rem;
+  transition: 0.3s;
+}
+.button:hover::after {
+  transform: scale(1);
+ 
+}
+.button__icon {
+  font-size: 1.2rem;
+}
 /*===== About Section =====*/
 
 /*===== Qualification Section =====*/
@@ -234,6 +323,11 @@ input {
 
 /*========== BREAKPOINTS ==========*/
 /* For Large Devices */
+@media(max-width:950px){
+  .nav__logo{
+    display: none;
+  }
+}
 @media screen and (max-width: 1408px) {
 }
 
