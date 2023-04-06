@@ -75,7 +75,9 @@ input {
   font-size: var(--normal-font-size);
 }
 body {
-  background-color: var(--body-color);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/774/original/1.png?1680449271);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--text-color);
 }
 h1,
@@ -98,7 +100,7 @@ a {
   text-decoration: none;
 }
 img {
-  max-width: 100%;
+  max-width: 200px;
   height: auto;
 }
 button {
@@ -120,11 +122,7 @@ input {
   grid-template-columns: 1fr 1fr;
 }
 /*=============== LAYOUT ===============*/
-.home .container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .grid {
   display: grid;
 }
@@ -145,13 +143,7 @@ input {
   color: var(--skin-color);
 }
 /*=============== SIDEBAR ===============*/
-.sidebar {
-  position: fixed;
-  width: 50px;
-  height: 100vh;
-  background-color: var(--body-color);
-  border-right: 1px solid var(--box-color);
-}
+
 .nav__logo {
   position: absolute;
   right: 0;
@@ -216,9 +208,6 @@ input {
 }
 /*=============== MAIN ===============*/
 .main {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/774/original/1.png?1680449271);
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-left: 50px;
 }
 /*===== Home Section =====*/
@@ -321,10 +310,7 @@ input {
 }
 
 /*===== Services Section =====*/
-.services {
-  height: 100vh;
-  margin-left: 100px;
-}
+
 .services__content {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;

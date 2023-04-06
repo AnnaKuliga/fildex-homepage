@@ -29,38 +29,71 @@
     <div class="container">
       <!--SIDEBAR-->
       <aside class="sidebar" id="sidebar">
-        <nav class="nav">
-          <div class="nav__menu">
-            <div class="menu">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a href="/index.html" class="nav__link active-link"
-                    >strona główna</a
-                  >
-                </li>
-                <li class="nav__item">
-                  <a href="#about" class="nav__link">o nas</a>
-                </li>
+        <section class="navbar">
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+              <a class="navbar-brand col-8" href="/index.html" title="Homepage"
+                ><img
+                  src="images/2.png"
+                  alt="FILDEX logo"
+                  class="logo"
+                  title="logo"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      href="/index.html"
+                      title="Strona Główna"
+                    >
+                      <i class="fa-solid fa-house"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      href="https://allegro.pl/uzytkownik/ShareOutlet?strategy=NO_FALLBACK&fbclid=IwAR2pFzbQsHKsi6XnfbGSskmu1qC-UIMMpeQXGpKBpElj-fK__jaHiT57NeM&order=n"
+                      target="_blank"
+                      title="Strona Główna"
+                    >
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about" title="About Anna"
+                      >O nas</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services" title="My work"
+                      >Usługi</a
+                    >
+                  </li>
 
-                <li class="nav__item">
-                  <a href="#services" class="nav__link">usługi</a>
-                </li>
-
-                <li class="nav__item">
-                  <a href="#contact" class="nav__link">kontakt</a>
-                </li>
-              </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact" title="Kontakt"
+                      >Kontakt</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="btn-share social-links">
-            <a
-              href="https://allegro.pl/uzytkownik/ShareOutlet?strategy=NO_FALLBACK&fbclid=IwAR2pFzbQsHKsi6XnfbGSskmu1qC-UIMMpeQXGpKBpElj-fK__jaHiT57NeM&order=n"
-              target="_blank"
-            >
-              <i class="fa-solid fa-cart-shopping" class="social__share"></i>
-            </a>
-          </div>
-        </nav>
+          </nav>
+        </section>
       </aside>
       <!--/SIDEBAR-->
       <!--MAIN-->
@@ -68,11 +101,6 @@
         <!--HOME-->
         <section class="home" id="home">
           <div class="home__container container grid">
-            <div class="nav__logo">
-              <a href="/index.html" class="nav__logo-text"
-                ><img src="images/2.png" alt="FILDEX logo" class="logo__img"
-              /></a>
-            </div>
             <div class="home__data">
               <h1 class="home__title">Witamy!</h1>
               <h3 class="home__subtitle">Firma usługowo handlowa FILDEX</h3>
