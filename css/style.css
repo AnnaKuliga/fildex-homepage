@@ -46,19 +46,6 @@
   --z-modal: 100;
 }
 
-/* Responsive Typography */
-@media screen and (max-width: 1024px) {
-  :root {
-    --biggest-font-size: 2rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1.125rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
-  }
-}
-
 /*=============== BASE ===============*/
 * {
   margin: 0;
@@ -98,6 +85,7 @@ li {
 }
 a {
   text-decoration: none;
+  color: var(--body-color);
 }
 img {
   max-width: 200px;
@@ -110,6 +98,12 @@ button,
 input {
   border: none;
   outline: none;
+}
+footer a {
+  color: var(--title-color);
+}
+footer {
+  font-size: 10px;
 }
 .container {
   margin-left: 20px;
@@ -127,9 +121,7 @@ input {
   display: grid;
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
-.section {
-  padding: 6.5rem 0 2rem;
-}
+
 .section__title {
   text-align: center;
   font-size: var(--h1-font-size);
@@ -144,6 +136,12 @@ input {
 }
 /*=============== SIDEBAR ===============*/
 
+.navbar {
+  padding: 0;
+}
+.navbar a:hover {
+  color: var(--skin-color);
+}
 .nav__logo {
   position: absolute;
   right: 0;
@@ -299,7 +297,7 @@ input {
 }
 /*===== About Section =====*/
 .about {
-  margin-left: 100px;
+  margin: 80px 100px;
 }
 .about p {
   text-align: justify;
@@ -310,14 +308,16 @@ input {
 }
 
 /*===== Services Section =====*/
-
+.services {
+  margin: 80px 100px;
+}
 .services__content {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
 .service_card {
   padding: 20px 40px;
-  background-color: #3e3e3e;
+  background-color: #5c5c5ccb;
   border-radius: 8px;
   margin-bottom: 10px;
 }
@@ -341,29 +341,54 @@ input {
   font-size: 40px;
   text-align: center;
 }
+/*CONTACT*/
+.contact {
+  margin: 80px 100px;
+}
+.contact h6,
+h4 {
+  text-align: center;
+}
+.contact h6 {
+  color: var(--skin-color);
+  text-transform: uppercase;
+}
+.contact h4 {
+  font-size: 30px;
+}
+.contact-into {
+  display: block;
+  margin: auto;
+}
+.icons {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.icons a {
+  margin: 20px 0;
+  color: var(--title-color);
+  text-align: center;
+}
 
-/* Active Modal*/
+.map iframe {
+  border-radius: 8px;
+}
 
-/*===== Testimonial Section =====*/
+.anna-links {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  display: inline-flex;
+  margin-right: 0;
+  background-color: var(--color-base);
+  border-radius: 100%;
+  font-size: 15px;
+}
+.anna-links a {
+  padding: 15px;
+}
 
-/* Swiper Class */
-
-/*===== Contact Section =====*/
-
-/*=============== FOOTER ===============*/
-
-/*=============== SCROLL UP ===============*/
-
-/* Show Scroll Up*/
-
-/*=============== SCROLL BAR ===============*/
-
-/*========== BREAKPOINTS ==========*/
-/* For Large Devices */
 @media (max-width: 950px) {
-  .nav__logo {
-    display: none;
-  }
   .about__container {
     grid-template-columns: 1fr;
   }
