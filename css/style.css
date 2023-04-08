@@ -62,9 +62,6 @@ input {
   font-size: var(--normal-font-size);
 }
 body {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/774/original/1.png?1680449271);
-  background-repeat: no-repeat;
-  background-size: cover;
   color: var(--text-color);
 }
 h1,
@@ -212,12 +209,14 @@ footer {
 .home {
   height: 100vh;
   width: 100%;
+  background-image: url(/images/city260262.jpg);
 }
 .home__container {
   position: relative;
   height: 100%;
   align-items: center;
 }
+
 .home__description {
   max-width: 450px;
   margin-bottom: var(--mb-2);
@@ -374,20 +373,15 @@ h4 {
   border-radius: 8px;
 }
 
-.anna-links {
-  width: 20px;
-  height: 20px;
-  margin-left: auto;
-  display: inline-flex;
-  margin-right: 0;
-  background-color: var(--color-base);
-  border-radius: 100%;
+.copyright {
   font-size: 15px;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
-.anna-links a {
-  padding: 15px;
+.copyright a:hover {
+  color: var(--skin-color);
 }
-
 @media (max-width: 950px) {
   .about__container {
     grid-template-columns: 1fr;
