@@ -9,10 +9,6 @@
       content="FILDEX to firma usługowo handlowa, która oferuje szeroki zakres usług m.in. malowanie, składanie mebli, seriws rowerowy i inne. Sprawdź po więcej."
     />
     <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
-    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
@@ -22,124 +18,103 @@
       src="https://kit.fontawesome.com/27f486756b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>FILDEX: firma usługowo montażowa</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand col-8" href="/index.html" title="Homepage"
+          ><img src="images/2.png" alt="FILDEX logo" class="logo" title="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/index.html"
+                title="Strona Główna"
+              >
+                <i class="fa-solid fa-house"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="https://allegro.pl/uzytkownik/ShareOutlet?strategy=NO_FALLBACK&fbclid=IwAR2pFzbQsHKsi6XnfbGSskmu1qC-UIMMpeQXGpKBpElj-fK__jaHiT57NeM&order=n"
+                target="_blank"
+                title="Strona Główna"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" title="About Anna">O nas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services" title="My work">Usługi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#shop" title="Sklep">Sklep</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" title="Kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container">
-      <!--SIDEBAR-->
-      <aside class="sidebar" id="sidebar">
-        <section class="navigation">
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-              <a class="navbar-brand col-8" href="/index.html" title="Homepage"
-                ><img
-                  src="images/2.png"
-                  alt="FILDEX logo"
-                  class="logo"
-                  title="logo"
-              /></a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      aria-current="page"
-                      href="/index.html"
-                      title="Strona Główna"
-                    >
-                      <i class="fa-solid fa-house"></i>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      aria-current="page"
-                      href="https://allegro.pl/uzytkownik/ShareOutlet?strategy=NO_FALLBACK&fbclid=IwAR2pFzbQsHKsi6XnfbGSskmu1qC-UIMMpeQXGpKBpElj-fK__jaHiT57NeM&order=n"
-                      target="_blank"
-                      title="Strona Główna"
-                    >
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about" title="About Anna"
-                      >O nas</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#services" title="My work"
-                      >Usługi</a
-                    >
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact" title="Kontakt"
-                      >Kontakt</a
-                    >
-                  </li>
-                </ul>
+      <!--HEADER-->
+      <header id="header-bgd">
+        <div class="home">
+          <div class="intro-contact">
+            <div class="intro-item">
+              <i class="fa-solid fa-phone intro-icon"></i>
+              <div>
+                <h3>Zadzwoń</h3>
+                <p>+48 514 927 892</p>
               </div>
             </div>
-          </nav>
-        </section>
-      </aside>
-      <!--/SIDEBAR-->
-      <!--MAIN-->
-      <main class="main">
-        <!--HOME-->
-        <section class="home" id="home">
-          <div class="home__container container grid">
-            <div class="home__data">
-              <h1 class="home__title">Witamy!</h1>
-              <h3 class="home__subtitle">Firma usługowo handlowa FILDEX</h3>
-              <p class="home__description">Zajmujemy się szeroką gamą usług.</p>
-              <a href="#about" class="button button__icon"
-                ><i class="fa-solid fa-user"></i>O nas</a
-              >
-            </div>
-
-            <div class="my__info">
-              <div class="info__item">
-                <i class="fa-solid fa-phone info__icon"></i>
-                <div>
-                  <h3 class="info__title">Zadzwoń</h3>
-                  <span class="info__subtitle">+48 514 927 892</span>
-                </div>
-              </div>
-              <div class="info__item">
-                <i class="fa-regular fa-envelope info__icon"></i>
-                <div>
-                  <h3 class="info__title">Napisz</h3>
-                  <span class="info__subtitle"
-                    ><a href="mailto:fildex@wp.pl" title="Napisz do nas"
-                      >fildex@wp.pl</a
-                    ></span
+            <div class="intro-item">
+              <i class="fa-regular fa-envelope intro-icon"></i>
+              <div>
+                <h3>Napisz</h3>
+                <p>
+                  <a href="mailto:fildex@wp.pl" title="Napisz do nas"
+                    >fildex@wp.pl</a
                   >
-                </div>
+                </p>
               </div>
             </div>
           </div>
-        </section>
-        <!--/HOME-->
-      </main>
-      <!--/MAIN-->
+          <div class="home-intro">
+            <h1>Witamy!</h1>
+            <h3>Firma usługowo handlowa <span class="logo">FILDEX</span></h3>
+            <p>
+              Zajmujemy się szeroką gamą usług. Jesteśmy pewni, <br />że
+              znajdziesz tu coś dla siebie!
+            </p>
+          </div>
+        </div>
+      </header>
       <!--ABOUT-->
-      <section class="about" id="about">
-        <h2 data-heading="O firmie" class="section__title">FILDEX</h2>
-
-        <div class="about__container container grid">
+      <section class="about section" id="about">
+        <h2 data-heading="O firmie" class="about-title">FILDEX</h2>
+        <div class="about-content grid grid-two-columns">
           <div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82600.34022570548!2d21.686382517697727!3d49.68706454334681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473c48ca2a422a0f%3A0x7279237954aa022d!2sKrosno%2C%20Polska!5e0!3m2!1spl!2sno!4v1680440661637!5m2!1spl!2sno"
@@ -151,7 +126,7 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div class="about__data">
+          <div class="about-description">
             <p class="description">
               Firma FILDEX została założona w 2021r. i działa w województwie
               podkarpackim. Wyróżniamy się szeroką gamą usług montażowych,
@@ -169,108 +144,97 @@
           </div>
         </div>
       </section>
-      <!--/ABOUT-->
       <!--SERVICES-->
-      <section class="services" id="services">
-        <h2 data-heading="FILDEX" class="section__title">Usługi</h2>
-
-        <div class="services__container container">
-          <div class="services__content grid">
-            <div class="service_card shadow-effect">
-              <i class="fa-solid fa-plug"></i>
-              <h3 class="services__title">Elektryka</h3>
-              <p>
-                Zajmujemy się naprawą i wymianą instalacji elektrycznych.
-                Realizujemy także, drobne usługi typu wymiana gniazdek i
-                włączników. Diagnozujemy przyczynę problemów z niestabilnym
-                działaniem istalacji prądowej w gospodarstwach domowych oraz
-                naprawiamy zaistniałą usterkę lub doradzamy możliwe rozwiązania.
-              </p>
-            </div>
-            <div class="service_card shadow-effect">
-              <i class="fa-solid fa-wrench"></i>
-              <h3 class="services__title">Hydraulika</h3>
-              <p>
-                Świadczymy usługi hydrauliczne takie jak szybkie usuwanie
-                awarii, ale także montaż kabin prysznicowych, muszli
-                klozetowych, umywalek, wymiana syfonów, udrażnianie odpływów.
-                Montujemy baterie, spłuczki oraz wszelkie inne elementy
-                infrastruktury hydraulicznej. Diagnozujemy przyczyny
-                nieszczelności i usuwamy ich źródło.
-              </p>
-            </div>
-            <div class="service_card shadow-effect">
-              <i class="fa-solid fa-door-open"></i>
-              <h3 class="services__title">Okna i drzwi</h3>
-              <p>
-                Usługi z zakresu montażu rolet wewnętrznych, zewnętrznych, a
-                także moskitier. Od ręki realizujemy usługę regulacji drzwi i
-                okien, wymianę zamków i klamek, konserwację zawiasów czy wymianę
-                wewnętrznych skrzydeł drzwiowych.
-              </p>
-            </div>
-            <div class="service_card shadow-effect">
-              <i class="fa-solid fa-chair"></i>
-              <h3 class="services__title">Meble i wyposażenie</h3>
-              <p>
-                Oferujemy składanie nowych lub naprawę starych mebli,
-                powieszenie szafki, półki, lustra i innych elementów wyposażenia
-                mieszkania.
-              </p>
-            </div>
-            <div class="service_card shadow-effect">
-              <i class="fa-solid fa-tv"></i>
-              <h3 class="services__title">Serwis RTV/AGD</h3>
-              <p>
-                Awaria pralki, zmywarki, telewizora czy innego sprzętu RTV i
-                AGD. Przyjedziemy, zabierzemy, zdiagnozujemy i usuniemy usterkę,
-                a następnie odwieziemy i zamontujemy sprawny sprzęt.
-              </p>
-            </div>
-            <div class="service_card shadow-effect">
-              <i class="fa-solid fa-bicycle"></i>
-              <h3 class="services__title">Serwis rowerowy</h3>
-              <p>
-                Serwis rowerowy z dojazdem do klienta. Możliwość wykonania
-                drobnych usterek na miejscu lub zabrania na warsztat w przypadku
-                poważniejszych awarii sprzętu. Wśród naszych usług znajdziesz
-                naprawy bieżące jak i serwis okresowy. Centrowanie oraz
-                zaplatanie kół szprychowych. Przeglądy sezonowe, konserwacja i
-                naprawy. Regulacja hamulców i przekładni. Serwis hydrauliki oraz
-                amortyzatorów. Naprawa oświetlenia.
-              </p>
-            </div>
-            <div class="service_card shadow-effect">
-              <i class="fa-solid fa-trowel-bricks"></i>
-              <h3 class="services__title">
-                Prace podwykonawcze<br />
-                firm produkcyjnych
-              </h3>
-              <p>
-                Oferujemy współprace w firmami produkcyjnymi, przyjmujemy stałe
-                jak i jednorazowe zlecenia, usprawniamy wykonywanie powierzonych
-                nam zadań poprzez znakomite rozwiązania i modernizacje
-                zakupionych przez nas sprzętów.
-              </p>
-            </div>
+      <img
+        src="./images/vecteezy_renovation-workers-repair-home-interior-team_13194635.jpg"
+        alt="plumbers and technicians"
+        class="between-img"
+        id="services"
+      />
+      <section class="services section">
+        <h2 data-heading="FILDEX" class="services-title">Usługi</h2>
+        <div class="services-content grid grid-three-columns">
+          <div class="service-card shadow-effect">
+            <i class="fa-solid fa-plug"></i>
+            <h3 class="title">Elektryka</h3>
+            <p>
+              Zajmujemy się naprawą i wymianą instalacji elektrycznych.
+              Realizujemy także, drobne usługi typu wymiana gniazdek i
+              włączników. Diagnozujemy przyczynę problemów z niestabilnym
+              działaniem istalacji prądowej w gospodarstwach domowych oraz
+              naprawiamy zaistniałą usterkę lub doradzamy możliwe rozwiązania.
+            </p>
+          </div>
+          <div class="service-card shadow-effect">
+            <i class="fa-solid fa-wrench"></i>
+            <h3 class="title">Hydraulika</h3>
+            <p>
+              Świadczymy usługi hydrauliczne takie jak szybkie usuwanie awarii,
+              ale także montaż kabin prysznicowych, muszli klozetowych,
+              umywalek, wymiana syfonów, udrażnianie odpływów. Montujemy
+              baterie, spłuczki oraz wszelkie inne elementy infrastruktury
+              hydraulicznej. Diagnozujemy przyczyny nieszczelności i usuwamy ich
+              źródło.
+            </p>
+          </div>
+          <div class="service-card shadow-effect">
+            <i class="fa-solid fa-door-open"></i>
+            <h3 class="title">Okna i drzwi</h3>
+            <p>
+              Usługi z zakresu montażu rolet wewnętrznych, zewnętrznych, a także
+              moskitier. Od ręki realizujemy usługę regulacji drzwi i okien,
+              wymianę zamków i klamek, konserwację zawiasów czy wymianę
+              wewnętrznych skrzydeł drzwiowych.
+            </p>
+          </div>
+          <div class="service-card shadow-effect">
+            <i class="fa-solid fa-chair"></i>
+            <h3 class="title">Meble i wyposażenie</h3>
+            <p>
+              Oferujemy składanie nowych lub naprawę starych mebli, powieszenie
+              szafki, półki, lustra i innych elementów wyposażenia mieszkania.
+            </p>
+          </div>
+          <div class="service-card shadow-effect">
+            <i class="fa-solid fa-tv"></i>
+            <h3 class="title">Serwis RTV/AGD</h3>
+            <p>
+              Awaria pralki, zmywarki, telewizora czy innego sprzętu RTV i AGD.
+              Przyjedziemy, zabierzemy, zdiagnozujemy i usuniemy usterkę, a
+              następnie odwieziemy i zamontujemy sprawny sprzęt.
+            </p>
+          </div>
+          <div class="service-card shadow-effect">
+            <i class="fa-solid fa-bicycle"></i>
+            <h3 class="title">Serwis rowerowy</h3>
+            <p>
+              Serwis rowerowy z dojazdem do klienta. Możliwość wykonania
+              drobnych usterek na miejscu lub zabrania na warsztat w przypadku
+              poważniejszych awarii sprzętu. Wśród naszych usług znajdziesz
+              naprawy bieżące jak i serwis okresowy. Centrowanie oraz zaplatanie
+              kół szprychowych. Przeglądy sezonowe, konserwacja i naprawy.
+              Regulacja hamulców i przekładni. Serwis hydrauliki oraz
+              amortyzatorów. Naprawa oświetlenia.
+            </p>
+          </div>
+          <div class="service-card shadow-effect">
+            <i class="fa-solid fa-trowel-bricks"></i>
+            <h3 class="title">
+              Prace podwykonawcze<br />
+              firm produkcyjnych
+            </h3>
+            <p>
+              Oferujemy współprace w firmami produkcyjnymi, przyjmujemy stałe
+              jak i jednorazowe zlecenia, usprawniamy wykonywanie powierzonych
+              nam zadań poprzez znakomite rozwiązania i modernizacje zakupionych
+              przez nas sprzętów.
+            </p>
           </div>
         </div>
       </section>
-      <!--/SERVICES-->
       <!--CONTACT-->
-      <section class="contact">
+      <section class="contact section" id="contact">
         <div class="grid grid-two-columns">
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82539.09718412723!2d21.738495569456667!3d49.7230981654011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473c4f7079d48369%3A0xb5e18976c39cde7c!2sKorczyna%2C%20Polska!5e0!3m2!1spl!2sno!4v1680894196480!5m2!1spl!2sno"
-              width="400"
-              height="300"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
           <div class="contact-into">
             <h6>Zainteresowany?</h6>
             <h4>Skontaktuj się z nami</h4>
@@ -287,18 +251,18 @@
               >
             </div>
           </div>
+          <div class="contact-img">
+            <img src="./images/undraw_Personal_email_re_4lx7.png" alt="" />
+          </div>
         </div>
       </section>
-      <!--/CONTACT-->
     </div>
     <!--FOOTER-->
-    <footer class="bg-dark">
+    <footer class="bg-light">
       <div class="copyright">
         <i class="fa-regular fa-copyright"></i>2023 Coded by
         <a href="https://annakuliga.com" target="_blank">Anna Kuliga</a>.
       </div>
     </footer>
-    <!--/FOOTER-->
-    <script src="js/main.js"></script>
   </body>
 </html>
