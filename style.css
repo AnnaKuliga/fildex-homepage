@@ -81,7 +81,7 @@ h4 {
   padding-left: 20px;
 }
 .contact-img img {
-  max-width: 600px;
+  max-width: 500px;
 }
 .copyright {
   font-size: 15px;
@@ -204,4 +204,45 @@ p {
 }
 .shadow-effect:hover {
   box-shadow: -6px 6px 0 0 var(--header-color);
+}
+@media (max-width: 900px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+  .map {
+    margin: 0 auto;
+  }
+  .contact-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+  }
+  .contact-img img {
+    max-width: 200px;
+  }
+  .contact-info {
+    padding: 15px;
+  }
+  .grid {
+    grid-gap: 15px;
+  }
+  .grid-two-columns {
+    grid-template-columns: 1fr;
+  }
+  .grid-three-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .home {
+    padding-top: 20px;
+  }
+  .icons {
+    grid-template-rows: 1fr;
+  }
 }
