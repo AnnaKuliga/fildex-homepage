@@ -26,6 +26,15 @@ footer {
   background-color: black;
   color: var(--font-color);
 }
+h1 {
+  font-size: 46px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 30px;
+}
 header {
   padding: 100px 20px;
 }
@@ -36,6 +45,7 @@ iframe {
 
 p {
   text-align: justify;
+  font-size: 17px;
 }
 .about-title {
   margin: 80px auto 50px;
@@ -214,8 +224,36 @@ p {
   h6 {
     text-align: center;
   }
+  h1 {
+    font-size: 23;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .contact {
+    background-color: transparent;
+  }
+  .contact a {
+    color: var(--font-color);
+    text-align: center;
+  }
+  .contact h4 {
+    color: var(--font-color);
+    font-size: 18px;
+    text-align: center;
+  }
+  .contact h6 {
+    font-size: 13px;
+    text-align: center;
+  }
   .map {
-    margin: 0 auto;
+    display: none;
   }
   .contact-img {
     display: block;
@@ -238,11 +276,30 @@ p {
   .grid-three-columns {
     grid-template-columns: 1fr;
   }
-
+  header {
+    padding-bottom: 0;
+  }
   .home {
     padding-top: 20px;
   }
   .icons {
     grid-template-rows: 1fr;
+  }
+  .section {
+    margin: 20px 40px;
+  }
+  .service-card {
+    font-size: 30px;
+    transition: all 0.4s ease;
+    text-align: center;
+  }
+  .services-title {
+    margin: 30px auto;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .tools img {
+    max-width: 300px;
   }
 }
