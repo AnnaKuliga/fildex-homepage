@@ -6,7 +6,7 @@
   --hover-color: #2f26dd;
   --card-hover: hsla(24, 14%, 71%, 0.911);
   --card-color: #e1e1e1cb;
-  --main-font: "Roboto Mono", monospace;
+  --main-font: "Open Sans", sans-serif;
   --font-color: rgb(245, 245, 245);
   --card-font-color: rgb(93, 91, 91);
 }
