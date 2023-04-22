@@ -243,6 +243,9 @@ p {
   h3 {
     font-size: 12px;
   }
+  header {
+    background-image: none;
+  }
   p {
     font-size: 12px;
   }
@@ -262,9 +265,7 @@ p {
     font-size: 13px;
     text-align: center;
   }
-  .map {
-    display: none;
-  }
+
   .contact-img {
     display: block;
     margin-left: auto;
@@ -295,6 +296,11 @@ p {
   .icons {
     grid-template-rows: 1fr;
   }
+  .map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .section {
     margin: 20px 40px;
   }
@@ -311,6 +317,11 @@ p {
 @media (max-width: 600px) {
   .tools img {
     max-width: 300px;
+  }
+}
+@media (max-width: 450px) {
+  .map {
+    display: none;
   }
 }
 @media (max-width: 350px) {
