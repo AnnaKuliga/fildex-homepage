@@ -41,6 +41,7 @@ header {
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 900px;
+  border-bottom: 1px solid black;
 }
 
 iframe {
@@ -73,6 +74,8 @@ p {
   margin: 0 auto;
   max-width: 1200px;
   padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
 }
 .contact {
   background-color: var(--card-color);
@@ -176,6 +179,8 @@ p {
 
 .section {
   margin: 80px 100px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid black;
 }
 .service-card h3 {
   font-weight: 600;
